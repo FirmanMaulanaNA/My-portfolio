@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Premium Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Page Loader -->
+    <div id="loader">
+        <div class="spinner"></div>
+    </div>
+
+    <!-- Custom Cursor -->
+    <div class="cursor-dot"></div>
+    <div class="cursor-outline"></div>
+
+    <!-- Background Orbs (Modern SaaS style) -->
+    <div class="bg-orbs">
+        <div class="orb orb-1"></div>
+        <div class="orb orb-2"></div>
+    </div>
+
+    <!-- Navigation -->
+    <nav id="navbar">
+        <div class="nav-container">
+            <a href="#home" class="logo">Port<span>folio</span>.</a>
+            <ul class="nav-links">
+                <li><a href="#home" class="nav-link active">Home</a></li>
+                <li><a href="#about" class="nav-link">About</a></li>
+                <li><a href="#skills" class="nav-link">Skills</a></li>
+                <li><a href="#portfolio" class="nav-link">Work</a></li>
+                <li><a href="#experience" class="nav-link">Experience</a></li>
+                <li><a href="#contact" class="nav-link">Contact</a></li>
+            </ul>
+            <div class="nav-actions">
+                <button id="theme-toggle" aria-label="Toggle Theme">
+                    <svg class="sun-icon" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="5"></circle><line x1="12" y1="1" x2="12" y2="3"></line><line x1="12" y1="21" x2="12" y2="23"></line><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line><line x1="1" y1="12" x2="3" y2="12"></line><line x1="21" y1="12" x2="23" y2="12"></line><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line></svg>
+                    <svg class="moon-icon" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path></svg>
+                </button>
+                <div class="hamburger">
+                    <span></span><span></span><span></span>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header id="home" class="hero">
+        <div class="hero-content reveal">
+            <span class="badge">Available for hire</span>
+            <h1 class="hero-title">Crafting Digital <br><span class="gradient-text">Experiences</span></h1>
+            <h2 class="hero-subtitle">I'm a <span id="typewriter"></span><span class="cursor">|</span></h2>
+            <p class="hero-desc">Building premium, fast, and accessible web applications with a focus on modern design and user experience.</p>
+            <div class="hero-buttons">
+                <a href="#portfolio" class="btn btn-primary">View My Work</a>
+                <a href="#contact" class="btn btn-secondary">Contact Me</a>
+            </div>
+        </div>
+        <div class="hero-image reveal">
+            <div class="image-wrapper glass">
+                <img src="assets/profile.png" alt="Profile" onerror="this.src='data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI0MDAiIGhlaWdodD0iNDAwIj48cmVjdCB3aWR0aD0iNDAwIiBoZWlnaHQ9IjQwMCIgZmlsbD0iIzIyMiIvPjwvc3ZnPg=='">
+            </div>
+        </div>
+        <a href="#about" class="scroll-indicator">
+            <div class="mouse"></div>
+        </a>
+    </header>
+
+    <!-- About Section -->
+    <section id="about" class="section">
+        <div class="container">
+            <div class="section-header reveal">
+                <h2>About Me</h2>
+                <p>Passionate developer bridging the gap between design and engineering.</p>
+            </div>
+            <div class="about-grid reveal">
+                <div class="about-text glass card">
+                    <h3>Biography</h3>
+                    <p>With over 5 years of experience in software development, I specialize in creating scalable SaaS products, interactive web applications, and intuitive user interfaces. I believe in writing clean, maintainable code and pushing the boundaries of what's possible on the web.</p>
+                    <button class="btn btn-outline mt-1" id="download-cv">Download CV</button>
+                </div>
+                <div class="about-stats glass card">
+                    <div class="stat-item">
+                        <h4 class="counter" data-target="5">0</h4>
+                        <p>Years Experience</p>
+                    </div>
+                    <div class="stat-item">
+                        <h4 class="counter" data-target="40">0</h4>
+                        <p>Projects Completed</p>
+                    </div>
+                    <div class="stat-item">
+                        <h4 class="counter" data-target="25">0</h4>
+                        <p>Happy Clients</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="section">
+        <div class="container">
+            <div class="section-header reveal">
+                <h2>Technical Arsenal</h2>
+                <p>Technologies I work with on a daily basis.</p>
+            </div>
+            <div class="skills-grid reveal">
+                <div class="skill-card glass tilt">
+                    <h4>Frontend Development</h4>
+                    <div class="skill-bar"><div class="skill-progress" data-width="95%"></div><span class="skill-name">HTML/CSS</span><span class="skill-pct">95%</span></div>
+                    <div class="skill-bar"><div class="skill-progress" data-width="90%"></div><span class="skill-name">JavaScript</span><span class="skill-pct">90%</span></div>
+                    <div class="skill-bar"><div class="skill-progress" data-width="85%"></div><span class="skill-name">React / Vue</span><span class="skill-pct">85%</span></div>
+                </div>
+                <div class="skill-card glass tilt">
+                    <h4>Backend & Design</h4>
+                    <div class="skill-bar"><div class="skill-progress" data-width="80%"></div><span class="skill-name">Node.js</span><span class="skill-pct">80%</span></div>
+                    <div class="skill-bar"><div class="skill-progress" data-width="75%"></div><span class="skill-name">Python</span><span class="skill-pct">75%</span></div>
+                    <div class="skill-bar"><div class="skill-progress" data-width="90%"></div><span class="skill-name">UI/UX Design</span><span class="skill-pct">90%</span></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Portfolio Section -->
+    <section id="portfolio" class="section">
+        <div class="container">
+            <div class="section-header reveal">
+                <h2>Selected Works</h2>
+                <p>A showcase of my recent projects and experiments.</p>
+            </div>
+            
+            <div class="filter-container reveal">
+                <button class="filter-btn active" data-filter="all">All</button>
+                <button class="filter-btn" data-filter="saas">SaaS</button>
+                <button class="filter-btn" data-filter="web">Web Apps</button>
+            </div>
+
+            <div class="portfolio-grid reveal">
+                <!-- Project 1 -->
+                <div class="portfolio-card glass mix saas">
+                    <div class="card-img-placeholder">Project Image</div>
+                    <div class="portfolio-content">
+                        <div class="tags"><span class="tag">SaaS</span><span class="tag">Dashboard</span></div>
+                        <h3>Fintech Analytics Platform</h3>
+                        <p>A comprehensive dashboard for real-time financial data visualization.</p>
+                        <div class="portfolio-links">
+                            <a href="#" class="link">Live Demo &rarr;</a>
+                            <a href="#" class="link">GitHub &rarr;</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Project 2 -->
+                <div class="portfolio-card glass mix web">
+                    <div class="card-img-placeholder">Project Image</div>
+                    <div class="portfolio-content">
+                        <div class="tags"><span class="tag">Web App</span><span class="tag">E-Commerce</span></div>
+                        <h3>Premium Storefront</h3>
+                        <p>Headless e-commerce platform with blazing fast performance.</p>
+                        <div class="portfolio-links">
+                            <a href="#" class="link">Live Demo &rarr;</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Project 3 -->
+                <div class="portfolio-card glass mix saas">
+                    <div class="card-img-placeholder">Project Image</div>
+                    <div class="portfolio-content">
+                        <div class="tags"><span class="tag">SaaS</span><span class="tag">Productivity</span></div>
+                        <h3>TaskFlow Pro</h3>
+                        <p>Collaborative project management tool with real-time updates.</p>
+                        <div class="portfolio-links">
+                            <a href="#" class="link">Live Demo &rarr;</a>
+                            <a href="#" class="link">GitHub &rarr;</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience Timeline -->
+    <section id="experience" class="section">
+        <div class="container">
+            <div class="section-header reveal">
+                <h2>Experience & Education</h2>
+                <p>My professional journey so far.</p>
+            </div>
+            <div class="timeline reveal">
+                <div class="timeline-item glass">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-date">2023 - Present</div>
+                    <h3>Senior Frontend Engineer</h3>
+                    <h4>TechNova Inc.</h4>
+                    <p>Leading the frontend team to build scalable React architectures and design systems for enterprise SaaS applications.</p>
+                </div>
+                <div class="timeline-item glass">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-date">2021 - 2023</div>
+                    <h3>Full Stack Developer</h3>
+                    <h4>Creative Digital Agency</h4>
+                    <p>Developed custom web applications and e-commerce solutions for global clients using Node.js and modern JS frameworks.</p>
+                </div>
+                <div class="timeline-item glass">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-date">2017 - 2021</div>
+                    <h3>B.S. Computer Science</h3>
+                    <h4>University of Technology</h4>
+                    <p>Graduated with Honors. Specialized in Software Engineering and Human-Computer Interaction.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="section">
+        <div class="container">
+            <div class="section-header reveal">
+                <h2>Get In Touch</h2>
+                <p>Have a project in mind? Let's build something great together.</p>
+            </div>
+            <div class="contact-grid reveal">
+                <div class="contact-info glass card">
+                    <h3>Contact Information</h3>
+                    <div class="info-item">
+                        <span class="icon">✉</span>
+                        <div>
+                            <h4>Email</h4>
+                            <p id="email-text">hello@example.com</p>
+                            <button class="btn-text" id="copy-email">Copy Email</button>
+                        </div>
+                    </div>
+                    <div class="info-item">
+                        <span class="icon">📍</span>
+                        <div>
+                            <h4>Location</h4>
+                            <p>San Francisco, CA (Remote)</p>
+                        </div>
+                    </div>
+                </div>
+                <form id="contact-form" class="glass card">
+                    <div class="form-group">
+                        <input type="text" id="name" required placeholder=" ">
+                        <label for="name">Your Name</label>
+                    </div>
+                    <div class="form-group">
+                        <input type="email" id="email" required placeholder=" ">
+                        <label for="email">Your Email</label>
+                    </div>
+                    <div class="form-group">
+                        <textarea id="message" required placeholder=" " rows="4"></textarea>
+                        <label for="message">Your Message</label>
+                    </div>
+                    <button type="submit" class="btn btn-primary w-100">Send Message</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container footer-content">
+            <div class="footer-logo">
+                <h2>Port<span>folio</span>.</h2>
+                <p>Designing digital experiences.</p>
+            </div>
+            <div class="footer-links">
+                <a href="#home">Home</a>
+                <a href="#about">About</a>
+                <a href="#portfolio">Work</a>
+                <a href="#contact">Contact</a>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; <span id="current-year"></span> All rights reserved.</p>
+            <a href="#home" class="back-to-top" aria-label="Back to top">↑</a>
+        </div>
+    </footer>
+
+    <!-- Toast Notification -->
+    <div id="toast" class="toast"></div>
+
+    <script src="script.js"></script>
+</body>
+</html>
