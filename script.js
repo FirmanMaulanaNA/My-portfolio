@@ -259,8 +259,11 @@ document.addEventListener("DOMContentLoaded", () => {
     const downloadBtn = document.getElementById('download-cv');
     if(downloadBtn) {
         downloadBtn.addEventListener('click', () => {
-            showToast("CV download started...");
-            // Real implementation would trigger anchor tag download
+             const link = document.createElement('a');
+             link.href = '/assets/CV.pdf';
+             link.download = 'Firman_Maulana_Fake-CV.pdf';
+             link.click();
+             showToast("Fake CV download started...");
         });
     }
 });
